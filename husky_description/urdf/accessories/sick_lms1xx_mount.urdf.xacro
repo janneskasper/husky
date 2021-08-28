@@ -26,11 +26,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 -->
 
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
-
+  
   <xacro:include filename="$(find lms1xx)/urdf/sick_lms1xx.urdf.xacro" />
 
   <xacro:macro name="sick_lms1xx_mount" params="prefix">
-
+    
     <link name="${prefix}_laser_mount">
       <visual>
         <origin xyz="0 0 0" rpy="0 0 ${-M_PI/2}" />
@@ -46,6 +46,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </geometry>
       </collision>
     </link>
+
 
     <joint name="${prefix}_laser_joint" type="fixed">
       <!-- This offset is from the base of the bracket to the LIDAR's focal point. -->

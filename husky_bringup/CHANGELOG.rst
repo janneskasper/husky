@@ -2,12 +2,29 @@
 Changelog for package husky_bringup
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.5.0 (2021-08-23)
+0.4.8 (2021-04-01)
 ------------------
-* [husky_bringup] Switched microstrain_mips to ros_mscl.
-* Fix the python-scipy dependency to refer to the python-3 version; python-scipy isn't installable on Focal
+* Add a missing colon to the install script
+* Contributors: Chris Iverach-Brereton
+
+0.4.7 (2021-03-16)
+------------------
+
+0.4.6 (2021-03-09)
+------------------
+* Add VLP16, secondary LMS1xx support (`#164 <https://github.com/husky/husky/issues/164>`_)
+  * Minimal refactor to add VLP16 + secondary LMS1xx support. Update defaults for the laser_enabled and realsense_enabled args to refer to the underlying envars to improve consistency when launching simulations. Modify the sensor bar to allow it to be positioned in the center by default, but with configurable xyz and rpy offsets
+  * Add the new run dependencies
+  * Remove the prefix's trailing underscore in the vlp16 mount to make it consistent. Fix an inconsistent envar for the sensor arch, add an arg to explicitly enable it, to stay internally consistent with the rest of Husky.
+  * Fix the envars; its just HUSKY_LMS1XX, not HUSKY_LASER_LMS1XX
+  * Revert to enabling the main laser by default in the simulations, add the velodyne_gazebo_plugins dependency
+* Remove the udev rules for the PS4 and Logitech controllers; those rules are provided either by the Clearpath ISO or by ds4drv as appropriate
+* Contributors: Chris I-B, Chris Iverach-Brereton
+
+0.4.5 (2020-10-01)
+------------------
 * Fix a bug where the UM7 and UM6 launch files don't work when installed to /etc/ros/*/ros.d; they fail to find the mag config files.
-* Contributors: Chris Iverach-Brereton, Tony Baltovski
+* Contributors: Chris Iverach-Brereton
 
 0.4.4 (2020-08-13)
 ------------------

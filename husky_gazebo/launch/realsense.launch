@@ -1,12 +1,15 @@
 <launch>
-  <!-- Include poincloud_to_laserscan if simulated realsense is attached -->
-  <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="realsense_to_laserscan" output="screen">
+  <arg name="camera_name" default="realsense" />
 
-      <remap from="cloud_in" to="realsense/depth/color/points"/>
-      <remap from="scan" to="realsense/scan"/>
+  <!-- Include poincloud_to_laserscan if simulated realsense is attached -->
+  <node pkg="pointcloud_to_laserscan" type="pointcloud_to_laserscan_node" name="$(arg camera_name)_to_laserscan" output="screen">
+
+      <remap from="cloud_in" to="/$(arg camera_name)/depth/color/points"/>
+      <remap from="scan" to="/$(arg camera_name)/scan"/>
+      <remap from="advancedScan" to="/$(arg camera_name)/advancedScan"/>
       <!-- TODO: modify these to match the Realsense D400 series parameters -->
       <rosparam>
-          target_frame: base_link # Leave empty to output scan in the pointcloud frame
+          target_frame: camera_realsense # Leave empty to output scan in the pointcloud frame
           tolerance: 1.0
           min_height: 0.05
           max_height: 1.0
