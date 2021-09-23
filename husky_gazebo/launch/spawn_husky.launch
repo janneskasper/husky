@@ -98,8 +98,8 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
               -urdf
               -param robot_description
               -model $(arg robot_namespace)
-              -J ur_arm_shoulder_lift_joint -3.0
-              -J ur_arm_elbow_joint 2.8
+              -J ur_arm_shoulder_lift_joint -1.57
+              -J ur_arm_elbow_joint 1.57
               -J ur_arm_wrist_1_joint -3.14
               -J ur_arm_shoulder_pan_joint 3.14
               -b " />

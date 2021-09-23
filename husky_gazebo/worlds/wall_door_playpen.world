@@ -129,7 +129,7 @@
         <enable_wind>0</enable_wind>
         <kinematic>0</kinematic>
       </link>
-      <pose>0.19709 -0.087615 0 0 -0 0</pose>
+      <pose>0.0 0.0 0.0 0 -0 0</pose>
     </model>
     <model name='Door'>
       <static>true</static>
@@ -415,139 +415,6 @@
       </link>
       <pose>-5.51701 -4.44686 0 0 -0 0</pose>
     </model>
-    <state world_name='default'>
-      <sim_time>5736 767000000</sim_time>
-      <real_time>264 737000550</real_time>
-      <wall_time>1618664861 205753037</wall_time>
-      <iterations>261004</iterations>
-      <model name='Door'>
-        <pose>0.773718 -1.99998 0.032735 -4e-06 1e-06 -1.56547</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0.773718 -1.99998 0.032735 -4e-06 1e-06 -1.56547</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 -9.8 0 -0 0</acceleration>
-          <wrench>0 0 -9.8 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='Door_0'>
-        <pose>-4.99998 -4.77381 0.032738 6e-06 8e-06 -3.14135</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>-4.99998 -4.77381 0.032738 6e-06 8e-06 -3.14135</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.004649 0.1335 1.38071 1.44886 0.270055 -9e-06</acceleration>
-          <wrench>-0.004649 0.1335 1.38071 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='TestWall'>
-        <pose>0.625 -3.5375 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='Wall_10'>
-          <pose>-5 -3 0 0 0 -1.5708</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='Wall_12'>
-          <pose>-5 -6.125 0 0 0 -1.5708</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='Wall_2'>
-          <pose>-2.5 -2 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='Wall_4'>
-          <pose>3.75 -2 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='aruco_visual_marker_6_pad'>
-        <pose>0.842649 -2.01022 0.399646 -0.000361 -1.57 1.57036</pose>
-        <scale>1 1 1</scale>
-        <link name='aruco_visual_marker_6::marker'>
-          <pose>0.842649 -2.01022 0.399646 -0.000361 -1.57 1.57036</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='aruco_visual_marker_6::marker_pad'>
-          <pose>0.84265 -2.00922 0.399645 -0.000361 -1.57 1.57036</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='marker_num'>
-          <pose>0.84265 -2.00937 0.224645 -0.000361 -1.57 1.57036</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='marker_pad_large'>
-          <pose>0.84265 -2.00925 0.364645 -0.000361 -1.57 1.57036</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='aruco_visual_marker_7_pad'>
-        <pose>-4.96727 -4.84155 0.396302 -0.000399 -1.57 3.14119</pose>
-        <scale>1 1 1</scale>
-        <link name='aruco_visual_marker_7::marker'>
-          <pose>-4.96727 -4.84155 0.396302 -0.000399 -1.57 3.14119</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='aruco_visual_marker_7::marker_pad'>
-          <pose>-4.96827 -4.84155 0.396301 -0.000399 -1.57 3.14119</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='marker_num'>
-          <pose>-4.96812 -4.84155 0.221301 -0.000399 -1.57 3.14119</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-        <link name='marker_pad_large'>
-          <pose>-4.96824 -4.84155 0.361301 -0.000399 -1.57 3.14119</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='asphalt_plane'>
-        <pose>0.19709 -9.2488 0 0 -0 0</pose>
-        <scale>0.713135 0.812152 1</scale>
-        <link name='link'>
-          <pose>0.19709 -9.2488 -0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='ground_plane'>
-        <pose>0 0 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose>0 0 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
-      <light name='sun'>
-        <pose>0 0 10 0 -0 0</pose>
-      </light>
-    </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
         <pose>3.81004 -10.1305 3.6506 0 0.414507 2.32188</pose>
